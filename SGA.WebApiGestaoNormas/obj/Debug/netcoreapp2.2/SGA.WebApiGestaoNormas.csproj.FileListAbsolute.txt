@@ -1,0 +1,13 @@
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.csproj.CoreCompileInputs.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.AssemblyInfoInputs.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.AssemblyInfo.cs
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.deps.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.runtimeconfig.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.runtimeconfig.dev.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.pdb
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.RazorAssemblyInfo.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.RazorAssemblyInfo.cs
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.RazorTargetAssemblyInfo.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoNormas\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoNormas.pdb

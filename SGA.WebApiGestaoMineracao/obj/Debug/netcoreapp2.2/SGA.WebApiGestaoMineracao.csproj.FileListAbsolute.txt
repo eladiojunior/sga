@@ -1,0 +1,14 @@
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.csproj.CoreCompileInputs.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.AssemblyInfoInputs.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.AssemblyInfo.cs
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.deps.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.runtimeconfig.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.runtimeconfig.dev.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.pdb
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.csprojAssemblyReference.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.RazorAssemblyInfo.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.RazorAssemblyInfo.cs
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.RazorTargetAssemblyInfo.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoMineracao\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoMineracao.pdb

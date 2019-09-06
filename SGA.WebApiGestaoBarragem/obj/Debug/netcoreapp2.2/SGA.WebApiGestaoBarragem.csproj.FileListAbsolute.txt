@@ -1,0 +1,14 @@
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.csproj.CoreCompileInputs.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.AssemblyInfoInputs.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.AssemblyInfo.cs
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.deps.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.runtimeconfig.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.runtimeconfig.dev.json
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.pdb
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.csprojAssemblyReference.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.RazorAssemblyInfo.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.RazorAssemblyInfo.cs
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.RazorTargetAssemblyInfo.cache
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoBarragem\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoBarragem.pdb

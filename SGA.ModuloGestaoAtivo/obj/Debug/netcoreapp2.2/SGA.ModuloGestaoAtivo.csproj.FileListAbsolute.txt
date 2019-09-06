@@ -15,9 +15,7 @@ D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloG
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloGestaoAtivo.TagHelpers.output.cache
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloGestaoAtivo.RazorCoreGenerate.cache
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
-D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
@@ -28,3 +26,8 @@ D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloG
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloGestaoAtivo.dll
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloGestaoAtivo.pdb
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.ModuloGestaoAtivo.csproj.CopyComplete
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Ativo\Registrar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Ativo\Listar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Ativo\Comprar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Ativo\Manter.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Debug\netcoreapp2.2\Razor\Views\Ativo\Baixar.g.cshtml.cs
