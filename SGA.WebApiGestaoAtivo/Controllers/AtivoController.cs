@@ -14,6 +14,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
     public class AtivoController : ControllerBase
     {
         private IAtivoRepository AtivoRepository { get; set; }
+
         public AtivoController(IAtivoRepository repository)
         {
             AtivoRepository = repository;
@@ -23,7 +24,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
         public async Task<IActionResult> GetAll()
         {
             IEnumerable<AtivoEntity> ativosEntity = await AtivoRepository.GetAllAtivosAsync();
-            return Ok(AtivoModel.Converter(ativosEntity));
+            return Ok(AtivoModel.ConverterToListModel(ativosEntity));
         }
 
         [HttpGet("{id}")]
@@ -40,7 +41,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
         {
             if (ativo == null)
                 return BadRequest("Informações do Ativo não informado.");
-            var ativoEntity = AtivoModel.Converter(ativo);
+            var ativoEntity = AtivoModel.ConverterToEntity(ativo);
             await AtivoRepository.Create(ativoEntity);
             return Ok("Ativo registrado com sucesso.");
         }
@@ -50,7 +51,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
         {
             if (ativo == null)
                 return BadRequest("Informações do Ativo não informado.");
-            var ativoEntity = AtivoModel.Converter(ativo);
+            var ativoEntity = AtivoModel.ConverterToEntity(ativo);
             bool hasResult = await AtivoRepository.Update(ativoEntity);
             if (!hasResult)
                 return NotFound("Não foi possível atualizar o Ativo.");

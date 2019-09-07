@@ -5,9 +5,10 @@ D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\bin\Debug\netcoreapp2.2\SG
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.runtimeconfig.json
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.runtimeconfig.dev.json
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.dll
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.pdb
+D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.csprojAssemblyReference.cache
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.csproj.CoreCompileInputs.cache
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.AssemblyInfoInputs.cache
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.AssemblyInfo.cs
-D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\bin\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.pdb
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.dll
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo.UnitTest\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.UnitTest.pdb

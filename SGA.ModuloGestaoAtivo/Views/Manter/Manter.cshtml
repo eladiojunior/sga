@@ -1,0 +1,63 @@
+﻿@model AtivoModel
+@{
+    ViewData["Title"] = "Registrar manutenção de Ativo";
+}
+<div class="row justify-content-md-center">
+    <div class="col-xs-12 col-sm-10">
+        <div class="card">
+            <div class="card-header"><strong>Registrar manutenção de Ativo</strong></div>
+            <div class="card-body">
+                <form class="form-manter">
+                    <input type="hidden" name="IdAtivo" id="IdAtivo" value="@Model.Id" />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="form-group">
+                                <label for="Nome">Nome do Ativo</label>
+                                <span class="form-control bg-light">@Model.Nome</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <label for="Tipo">Tipo do Ativo</label>
+                                <span class="form-control bg-light">@Model.Tipo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12"><hr /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="form-group">
+                                <label for="Data">Data da Manutenção</label>
+                                <input type="text" class="form-control" name="Data" required alt="data" maxlength="10" placeholder="00/00/0000">
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-3">
+                            <div class="form-group form-check" style="margin-top: 40px;">
+                                <input type="checkbox" class="form-check-input" name="HasPreventiva" id="HasPreventiva">
+                                <label class="form-check-label" for="HasPreventiva">Manutenção preventiva?</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="form-group">
+                                <label for="Descricao">Descrição da Manutenção</label>
+                                <input type="text" class="form-control" name="Descricao" required maxlength="250" placeholder="Descrição breve da manutenção realizada">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="float-right">
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Manter/manter.js" asp-append-version="true"></script>
+}

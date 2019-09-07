@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using SGA.WebApiGestaoAtivo.Contexto.Entites;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace SGA.WebApiGestaoAtivo.Contexto.Replository
 
         public async Task Create(AtivoEntity ativo)
         {
+            ativo.DataRegistro = DateTime.Now;
             await _context.Ativos.InsertOneAsync(ativo);
         }
 

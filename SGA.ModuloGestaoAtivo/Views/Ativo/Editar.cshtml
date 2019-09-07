@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Editar Ativo";
+}
+@model AtivoModel
+<div class="row justify-content-md-center">
+    <div class="col-xs-12 col-sm-10">
+        <div class="card">
+            <div class="card-header"><strong>Editar Ativo</strong></div>
+            <div class="card-body">
+                <form class="form-editar">
+                    @Html.HiddenFor(m => m.Id)
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="Nome">Nome do Ativo</label>
+                                <input type="text" class="form-control" name="Nome" value="@Model.Nome" required maxlength="100" placeholder="Nome completo do ativo">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <label for="Tipo">Tipo do Ativo</label>
+                                <input type="text" class="form-control" name="Tipo" value="@Model.Tipo" required maxlength="100" placeholder="Carros, tratores, caminhões, máquinas e equipamentos">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                            <div class="form-group">
+                                <label for="QtdDiasPeriodoManutencao">Período Manutenção</label>
+                                <input type="text" class="form-control" name="QtdDiasPeriodoManutencao" value="@Model.QtdDiasPeriodoManutencao" required maxlength="5" alt="numero" placeholder="30, 60, 90 dias">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="float-right">
+                                <button type="submit" class="btn btn-primary gravar-ativo">Gravar</button>
+                                <a asp-action="Listar" asp-controller="Ativo" class="btn btn-default">Voltar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Ativo/editar.js" asp-append-version="true"></script>
+}

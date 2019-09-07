@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+
+  sga.webapigestaoativo:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  sga.modulogestaoativo:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

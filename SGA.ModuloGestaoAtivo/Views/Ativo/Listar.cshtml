@@ -6,7 +6,7 @@
     <div class="col-xs-12 col-sm-8">
         <div class="card">
             <div class="card-header"><strong>Lista de Ativos</strong></div>
-            <div class="card-body">
+            <div class="card-body lista-ativos">
                 Lista de Ativos...
             </div>
         </div>
@@ -14,24 +14,27 @@
     <div class="col-xs-12 col-sm-4">
         <div class="d-sm-none">&nbsp;</div>
         <div class="form-group">
-            <button class="form-control btn btn-primary" title="Registrar um novo Ativo.">Registrar Ativo</button>
+            <button class="form-control btn btn-primary registrar-ativo" title="Registrar um novo Ativo.">Registrar Ativo</button>
         </div>
         <div class="card">
             <div class="card-body">
-                <form>
+                <form class="form-filtro">
                     <div class="form-group">
-                        <label for="nomeAtivo">Nome do Ativo</label>
-                        <input type="text" class="form-control" id="nomeAtivo" placeholder="Nome ou parte do ativo">
+                        <label for="Nome">Nome do Ativo</label>
+                        <input type="text" class="form-control" name="Nome" placeholder="Nome ou parte do ativo">
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="hasBaixado">
-                        <label class="form-check-label" for="hasBaixado">Exibir os ativos Baixados</label>
+                        <input type="checkbox" class="form-check-input" name="HasBaixados" id="HasBaixados">
+                        <label class="form-check-label" for="HasBaixados">Exibir os ativos Baixados</label>
                     </div>
                     <div class="float-right">
-                        <button type="submit" class="btn btn-primary">Filtrar</button>
+                        <button type="button" class="btn btn-primary filtrar-lista">Filtrar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+@section Scripts {
+    <script src="~/js/Ativo/listar.js" asp-append-version="true"></script>
+}

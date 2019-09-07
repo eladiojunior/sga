@@ -21,35 +21,36 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><strong>SGA<span class="d-sm-none"> - Módulo de Ativos</span></strong></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><strong>SGA - Módulo de Ativos</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ativo" asp-action="Listar">Listar Ativos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Ativo" asp-action="Listar" title="Listar os ativos da empresa.">Lista Ativos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ativo" asp-action="Manter">Manter Ativo</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Manter" asp-action="Listar" title="Solicitar manutenção de ativo.">Manutenção</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ativo" asp-action="Comprar">Comprar Ativo</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Comprar" asp-action="Listar" title="Solicitar compra de novo ativo.">Comprar Novo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ativo" asp-action="Baixar">Baixar Ativo</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Baixar" asp-action="Listar" title="Realizar baixa de ativo.">Baixar Ativo</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Outros Módulos
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">de Barragens</a>
-                                <a class="dropdown-item" href="#">de Mineração</a>
-                                <a class="dropdown-item" href="#">de Normas Ambientais</a>
+                                <a class="dropdown-item" href="#" title="Acessar o módulo de gestão de barragens.">de Barragens</a>
+                                <a class="dropdown-item" href="#" title="Acessar o módulo de gestão de mineração.">de Mineração</a>
+                                <a class="dropdown-item" href="#" title="Acessar o módulo de gestão de normas ambientais.">de Normas Ambientais</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Relatórios</a>
+                                <a class="dropdown-item" href="#" title="Acessar o módulo de emissão de relatórios.">Relatórios</a>
                             </div>
                         </li>
                     </ul>
@@ -57,8 +58,22 @@
             </div>
         </nav>
     </header>
+    <div class="loading d-none">
+        <div class="area-loading">
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div><div class="sk-circle2 sk-child"></div><div class="sk-circle3 sk-child"></div><div class="sk-circle4 sk-child"></div><div class="sk-circle5 sk-child"></div><div class="sk-circle6 sk-child"></div><div class="sk-circle7 sk-child"></div><div class="sk-circle8 sk-child"></div><div class="sk-circle9 sk-child"></div><div class="sk-circle10 sk-child"></div><div class="sk-circle11 sk-child"></div><div class="sk-circle12 sk-child"></div>
+                <div class="label-loading">Aguarde... Processando sua solicitação.</div>
+                <div class="img-logo-loading">
+                    <img class="img-responsive" src="@Url.Content("~/imgs/logo.png")" />
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <main role="main" class="pb-3">
+            <div class="mensagens">
+                <div class="alert"></div>
+            </div>
             @RenderBody()
         </main>
     </div>
@@ -88,7 +103,13 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script>
+        @{
+            var urlRoot = Url.Content("~");
+            urlRoot = !string.IsNullOrWhiteSpace(urlRoot) && urlRoot.EndsWith("/") ? urlRoot.Remove(urlRoot.Length - 1) : urlRoot;
+        }
+        var urlRoot = '@urlRoot';
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

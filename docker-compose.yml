@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  sga.webapigestaoativo:
+    container_name: sga_webapigestaoativo
+    image: ${DOCKER_REGISTRY-}sgawebapigestaoativo
+    build:
+      context: .
+      dockerfile: SGA.WebApiGestaoAtivo/Dockerfile
+    depends_on:
+      - mongo
+
+  sga.modulogestaoativo:
+    container_name: sga_modulogestaoativo
+    image: ${DOCKER_REGISTRY-}sgamodulogestaoativo
+    build:
+      context: .
+      dockerfile: SGA.ModuloGestaoAtivo/Dockerfile
+    depends_on:
+      - sga.webapigestaoativo
+
+  mongo:
+      container_name: mongoDB
+      image: mongo
+      ports:
+        - 49155:27017
