@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Listar Solicitação de Comprar de Novos Ativos";
+}
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <div class="card">
+            <div class="card-header"><strong>Listar Solicitação de Comprar de Novos Ativos</strong></div>
+            <div class="card-body lista-solicitacoes">
+                Lista de solicitações de compra...
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div class="d-sm-none">&nbsp;</div>
+        <div class="form-group">
+            <button class="form-control btn btn-primary registrar-compra" title="Registrar solicitação de compra de novo Ativo.">Solicitar Nova Compra</button>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <form class="form-filtro">
+                    <div class="form-group">
+                        <label for="Numero">Protocolo da Solicitação</label>
+                        <input type="text" class="form-control" name="Numero" placeholder="Número do Protocolo">
+                    </div>
+                    <div class="form-group">
+                        <label for="Situacao">Situação da Solicitação</label>
+                        <select class="form-control" name="Situacao">
+                            <option value="0">Todas as situações</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" name="HasFechadas" id="HasFechadas">
+                        <label class="form-check-label" for="HasFechadas">Exibir as solicitações fechadas</label>
+                    </div>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-primary filtrar-lista">Filtrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Comprar/listar.js" asp-append-version="true"></script>
+}

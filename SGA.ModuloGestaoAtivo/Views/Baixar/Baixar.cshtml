@@ -1,0 +1,65 @@
+﻿@model AtivoModel
+@{
+    ViewData["Title"] = "Registrar baixa de Ativo";
+}
+<div class="row justify-content-md-center">
+    <div class="col-xs-12 col-sm-10">
+        <div class="card">
+            <div class="card-header"><strong>Registrar baixa de Ativo</strong></div>
+            <div class="card-body">
+                <form class="form-baixar">
+                    <input type="hidden" name="IdAtivo" id="IdAtivo" value="@Model.Id" />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="form-group">
+                                <label for="Nome">Nome do Ativo</label>
+                                <span class="form-control bg-light">@Model.Nome</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <label for="Tipo">Tipo do Ativo</label>
+                                <span class="form-control bg-light">@Model.Tipo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12"><hr /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="form-group">
+                                <label for="Data">Data da Baixa</label>
+                                <input type="text" class="form-control" name="Data" required alt="data" maxlength="10" placeholder="00/00/0000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="Motivo">Motivo da Baixa</label>
+                                <input type="text" class="form-control" name="Motivo" required maxlength="250" placeholder="Motivo no qual o Ativo está sendo baixado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="alert alert-dark">Após o registro de baixa do Ativo não será permitido alterá-lo ou solicitar manutenções para ele.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="float-right">
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Baixar/baixar.js" asp-append-version="true"></script>
+}
+

@@ -1,0 +1,32 @@
+﻿@using SGA.ModuloGestaoAtivo.Models
+@model List<AtivoModel>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col" title="Nome do Ativo.">Nome</th>
+            <th scope="col" title="Tipo do ativo.">Tipo</th>
+            <th scope="col" title="Período de manutenção (em dias) do Ativo.">Manutenção</th>
+            <th scope="col" title="Data de registro da última manutenção no Ativo.">Última</th>
+            <th scope="col">Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model == null || !Model.Any())
+        {
+            <tr><td colspan="5">Nenhum ativo encontrado para o realizar manutenção.</td></tr>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Tipo</td>
+                    <td>@item.QtdDiasPeriodoManutencao</td>
+                    <td>@(item.UltimaManutencao.HasValue ? item.UltimaManutencao.Value.ToString("dd/MM/yyyy") : "-")</td>
+                    <td><a href="#" class="baixar-ativo" data-id="@item.Id" title="Realizar baixa de ativo.">Baixar</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -14,6 +14,7 @@ namespace SGA.ModuloGestaoAtivo.Service
         ICollection<AtivoModelApi> ListarAtivos(string nome, bool hasBaixados);
         void GravarAtivo(AtivoModelApi modelApi);
         AtivoModelApi ObterAtivo(string idAtivo);
+        ICollection<SolicitacaoCompraModelApi> ListarSolicitacaoCompra(string numeroProtocolo, int situacao, bool hasExibirFechadas);
     }
 
     public class SgaAtivoApiClient : ISgaAtivoApiClient
@@ -93,6 +94,19 @@ namespace SGA.ModuloGestaoAtivo.Service
                 throw new HttpRequestException("Erro ao recuperar a lista de ativos.", erro);
             }
 
+        }
+
+        /// <summary>
+        /// Recupera a lista de solicitações de comprar realizada pelo módulo.
+        /// </summary>
+        /// <param name="numeroProtocolo">Número do protocolo.</param>
+        /// <param name="situacao">Situacao</param>
+        /// <param name="hasExibirFechadas">Exibir fechadas.</param>
+        /// <returns></returns>
+        public ICollection<SolicitacaoCompraModelApi> ListarSolicitacaoCompra(string numeroProtocolo, int situacao, bool hasExibirFechadas)
+        {
+            List<SolicitacaoCompraModelApi> listResult = new List<SolicitacaoCompraModelApi>();
+            return listResult;
         }
 
         /// <summary>

@@ -1,0 +1,30 @@
+﻿@using SGA.ModuloGestaoAtivo.Models
+@model List<SolicitacaoCompraModel>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col" title="Número do protocolo da solicitação">Protocolo</th>
+            <th scope="col" title="Data da solicitação">Data</th>
+            <th scope="col" title="Descrição do ativo na solicitação de compra">Descrição de compra</th>
+            <th scope="col" title="Situação da solicitação de compra">Situação</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model == null || !Model.Any())
+        {
+            <tr><td colspan="5">Nenhuma solicitação de compra de ativo encontrada para o filtro informado.</td></tr>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NumeroProtocolo</td>
+                    <td>@item.DataSolicitacao</td>
+                    <td>@item.DescricaoSolicitacao</td>
+                    <td>@item.SituacaoSolicitacao</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
