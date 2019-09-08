@@ -1,4 +1,12 @@
 ﻿Listar = {
+    InitLista: function () {
+        $("button.filtrar-lista").click(function () {
+            Listar.CarregarLista();
+        });
+        $("button.registrar-compra").click(function () {
+            Global.SubmitActionGet("Registrar", "Comprar");
+        });
+    },
     CarregarLista: function () {
         Global.MostrarLoading(true);
         $.ajax({
@@ -21,5 +29,6 @@
     }
 };
 $(function () {
+    Listar.InitLista();
     Listar.CarregarLista();
 });

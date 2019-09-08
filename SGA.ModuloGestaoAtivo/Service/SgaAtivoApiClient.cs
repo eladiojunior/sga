@@ -15,6 +15,7 @@ namespace SGA.ModuloGestaoAtivo.Service
         void GravarAtivo(AtivoModelApi modelApi);
         AtivoModelApi ObterAtivo(string idAtivo);
         ICollection<SolicitacaoCompraModelApi> ListarSolicitacaoCompra(string numeroProtocolo, int situacao, bool hasExibirFechadas);
+        string SolicitarCompraAtivo(SolicitacaoCompraModelApi modelApi);
     }
 
     public class SgaAtivoApiClient : ISgaAtivoApiClient
@@ -97,19 +98,6 @@ namespace SGA.ModuloGestaoAtivo.Service
         }
 
         /// <summary>
-        /// Recupera a lista de solicitações de comprar realizada pelo módulo.
-        /// </summary>
-        /// <param name="numeroProtocolo">Número do protocolo.</param>
-        /// <param name="situacao">Situacao</param>
-        /// <param name="hasExibirFechadas">Exibir fechadas.</param>
-        /// <returns></returns>
-        public ICollection<SolicitacaoCompraModelApi> ListarSolicitacaoCompra(string numeroProtocolo, int situacao, bool hasExibirFechadas)
-        {
-            List<SolicitacaoCompraModelApi> listResult = new List<SolicitacaoCompraModelApi>();
-            return listResult;
-        }
-
-        /// <summary>
         /// Recupera um ativo pelo seu ID.
         /// </summary>
         /// <param name="idAtivo">Identificador do ativo.</param>
@@ -138,6 +126,72 @@ namespace SGA.ModuloGestaoAtivo.Service
             {
                 throw new HttpRequestException($"Erro ao recuperar ativo com id [{idAtivo}].", erro);
             }
+        }
+
+        /// <summary>
+        /// Recupera a lista de solicitações de comprar realizada pelo módulo.
+        /// </summary>
+        /// <param name="numeroProtocolo">Número do protocolo.</param>
+        /// <param name="situacao">Situacao</param>
+        /// <param name="hasExibirFechadas">Exibir fechadas.</param>
+        /// <returns></returns>
+        public ICollection<SolicitacaoCompraModelApi> ListarSolicitacaoCompra(string numeroProtocolo, int situacao, bool hasExibirFechadas)
+        {
+            ICollection<SolicitacaoCompraModelApi> listResult = new List<SolicitacaoCompraModelApi>();
+            try
+            {
+
+                string baseURL = _configuration.GetSection("SGA_ComprarAtivoAPI:BaseURL").Value;
+                string key = _configuration.GetSection("SGA_ComprarAtivoAPI:Key").Value;
+                if (!string.IsNullOrEmpty(key))
+                    baseURL += $"?api_key={key}";
+                var response = _client.GetAsync(baseURL).Result;
+
+                response.EnsureSuccessStatusCode();
+                string conteudo = response.Content.ReadAsStringAsync().Result;
+                listResult = JsonConvert.DeserializeObject<ICollection<SolicitacaoCompraModelApi>>(conteudo);
+                return listResult;
+
+            }
+            catch (Exception erro)
+            {
+                throw new HttpRequestException("Erro ao recuperar a lista de solicitações de compra de novos ativos.", erro);
+            }
+        }
+
+        /// <summary>
+        /// Registra uma solicitação de compra no sistema de compras e guarda na gestão de ativos para acompanhamento.
+        /// </summary>
+        /// <param name="modelApi"></param>
+        /// <returns></returns>
+        public string SolicitarCompraAtivo(SolicitacaoCompraModelApi modelApi)
+        {
+            //Encaminhar solicitação para o sistema de compras. aguarda protocolo.
+            string numeroProtocolo = Guid.NewGuid().ToString().Substring(0, 13);
+
+            //Manter a solicitação de ativo dentro do módulo para acompanhamento.
+            try
+            {
+
+                string baseURL = _configuration.GetSection("SGA_ComprarAtivoAPI:BaseURL").Value;
+                string key = _configuration.GetSection("SGA_ComprarAtivoAPI:Key").Value;
+                if (!string.IsNullOrEmpty(key))
+                    baseURL += $"?api_key={key}";
+
+                modelApi.NumeroProtocolo = numeroProtocolo;
+                StringContent content = new StringContent(JsonConvert.SerializeObject(modelApi), System.Text.Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = _client.PostAsync(baseURL, content).Result;
+                response.EnsureSuccessStatusCode();
+
+                return numeroProtocolo;
+
+            }
+            catch (Exception erro)
+            {
+                throw new HttpRequestException("Erro ao registrar solicitação de compra de novo ativo.", erro);
+            }
+            
         }
     }
 }

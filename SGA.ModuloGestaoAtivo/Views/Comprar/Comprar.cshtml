@@ -1,7 +1,55 @@
-﻿
+﻿@model SolicitacaoCompraModel
 @{
-    ViewData["Title"] = "Comprar novo Ativo";
+    ViewData["Title"] = "Solicitar comprar de novo Ativo";
 }
-
-<h1>Comprar</h1>
-
+<div class="row justify-content-md-center">
+    <div class="col-xs-12 col-sm-10">
+        <div class="card">
+            <div class="card-header"><strong>Solicitar comprar de novo Ativo</strong></div>
+            <div class="card-body">
+                <form class="form-solicitar">
+                    @Html.HiddenFor(m => m.CodigoSituacaoSolicitacao)
+                    @Html.HiddenFor(m => m.SituacaoSolicitacao)
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="alert alert-info">Ao registrar um pedido de compra, esse será analidado pela área responsável e sua situação será alterada.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="form-group">
+                                <label for="DataSolicitacao">Data da Solicitação</label>
+                                <input type="text" class="form-control" name="DataSolicitacao" value="@Model.DataSolicitacao.ToString("dd/MM/yyyy")" required alt="data" maxlength="10" placeholder="00/00/0000">
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-3">
+                            <div class="form-group">
+                                <label for="SituacaoSolicitacao">Situação da Solicitação</label>
+                                <span class="form-control bg-light">@Model.SituacaoSolicitacao</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="DescricaoSolicitacao">Descrição da Solicitação</label>
+                                <textarea placeholder="Informe os detalhes (tipo, modelo, novo ou usado, fabricante, etc.) do ativo que deseja comprar" cols="3" class="form-control" name="DescricaoSolicitacao" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="float-right">
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                                <a asp-action="Listar" asp-controller="Comprar" class="btn btn-secondary" title="Voltar para lista de solicitações de compra.">Voltar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Comprar/solicitar.js" asp-append-version="true"></script>
+}

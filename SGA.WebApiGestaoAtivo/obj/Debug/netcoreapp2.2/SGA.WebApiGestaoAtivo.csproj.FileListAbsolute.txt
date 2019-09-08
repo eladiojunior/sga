@@ -11,4 +11,3 @@ D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.WebApiG
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.RazorTargetAssemblyInfo.cache
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.dll
 D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.pdb
-D:\Projetos\GitHub\SGA\SGA.WebApiGestaoAtivo\obj\Debug\netcoreapp2.2\SGA.WebApiGestaoAtivo.csprojAssemblyReference.cache

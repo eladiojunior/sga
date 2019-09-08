@@ -13,5 +13,6 @@ namespace SGA.ModuloGestaoAtivo.Service.Model
         public string DescricaoSolicitacao { get; set; }
         public int CodigoSituacaoSolicitacao { get; set; }
         public string SituacaoSolicitacao { get; set; }
+        public string Responsavel { get; set; }
     }
 }

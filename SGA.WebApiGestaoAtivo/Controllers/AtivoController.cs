@@ -33,7 +33,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
             var item = await AtivoRepository.GetAtivo(id);
             if (item == null)
                 return NotFound(string.Format("Ativo [{0}] não encontrado.", id));
-            return Ok(item);
+            return Ok(AtivoModel.ConverterToModel(item));
         }
 
         [HttpPost]
@@ -55,7 +55,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
             bool hasResult = await AtivoRepository.Update(ativoEntity);
             if (!hasResult)
                 return NotFound("Não foi possível atualizar o Ativo.");
-            return Ok(string.Format("Ativo [{0}] atualizado com sucesso.", ativo.Id));
+            return Ok($"Ativo [{ativo.Id}] atualizado com sucesso.");
         }
 
         [HttpDelete("{id}")]
@@ -64,7 +64,7 @@ namespace SGA.WebApiGestaoAtivo.Controllers
             bool hasResult = await AtivoRepository.Delete(id);
             if (!hasResult)
                 return NotFound("Não foi possível remover o Ativo.");
-            return Ok(string.Format("Ativo [{0}] removido com sucesso.", id));
+            return Ok($"Ativo [{id}] removido com sucesso.");
         }
 
     }

@@ -13,10 +13,12 @@ namespace SGA.WebApiGestaoAtivo.Contexto
             _db = client.GetDatabase(options.Value.Database);
         }
         public IMongoCollection<AtivoEntity> Ativos => _db.GetCollection<AtivoEntity>("Ativos");
+        public IMongoCollection<SolicitacaoCompraAtivoEntity> SolicitacoesCompraAtivo => _db.GetCollection<SolicitacaoCompraAtivoEntity>("SolicitacoesCompraAtivo");
     }
 
     public interface IApplicationDbContext
     {
         IMongoCollection<AtivoEntity> Ativos { get; }
+        IMongoCollection<SolicitacaoCompraAtivoEntity> SolicitacoesCompraAtivo { get; }
     }
 }

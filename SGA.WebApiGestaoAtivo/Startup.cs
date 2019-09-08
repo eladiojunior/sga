@@ -34,9 +34,9 @@ namespace SGA.WebApiGestaoAtivo
             {
                 c.SwaggerDoc("v1", new Info
                 {
-                    Title = "Ativos API",
+                    Title = "Gestão de Ativos API",
                     Version = "v1",
-                    Description = "Ativos API - SGA",
+                    Description = "Módulo de Gestão de Ativos API - SGA",
                 });
             });
 
@@ -52,6 +52,7 @@ namespace SGA.WebApiGestaoAtivo
 
             services.AddTransient<Contexto.IApplicationDbContext, Contexto.ApplicationDbContext>();
             services.AddTransient<Contexto.Replository.IAtivoRepository, Contexto.Replository.AtivoRepository>();
+            services.AddTransient<Contexto.Replository.ISolicitacaoCompraAtivoRepository, Contexto.Replository.SolicitacaoCompraAtivoRepository>();
 
         }
 
@@ -73,7 +74,7 @@ namespace SGA.WebApiGestaoAtivo
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ativos API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gestão de Ativos API v1");
             });
 
         }
