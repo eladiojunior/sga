@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "338c8fcaa59921fbd09f7636119fde30c0de879a"
+    "signature": "cac9fbeed872b089506d593e29f1d30b4402c9a0"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "SGA.ModuloGestaoAtivo/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Identity.Core.pt-br": "2.2.2",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -39,6 +40,27 @@
         },
         "compile": {
           "SGA.ModuloGestaoAtivo.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.2": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core.pt-br/2.2.2": {
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.2"
+        },
+        "resources": {
+          "lib/net45/pt-br/Microsoft.AspNet.Identity.Core.resources.dll": {
+            "locale": "pt-br"
+          }
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -3569,6 +3591,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aZoXAqqisAQlEdeMwcn204m7ErUeYXJuoZ4YqvV85OPeB0w8o8kW8Ww5o5ZTZFx3mrLmmtfWKjt4nLqfjzjXEw==",
+      "path": "microsoft.aspnet.identity.core/2.2.2",
+      "hashPath": "microsoft.aspnet.identity.core.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.Core.pt-br/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jsXfTxRbK9Fvsv2zA8XzyFe4c6SDLRJOhgvzopIM32AaBravy9GOWZcsd9RtkB5iSfOO7SII3C1J/hO8kHpRWQ==",
+      "path": "microsoft.aspnet.identity.core.pt-br/2.2.2",
+      "hashPath": "microsoft.aspnet.identity.core.pt-br.2.2.2.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",

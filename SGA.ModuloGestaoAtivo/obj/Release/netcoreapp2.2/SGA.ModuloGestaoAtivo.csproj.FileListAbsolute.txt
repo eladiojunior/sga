@@ -15,8 +15,6 @@ D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.Modul
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.ModuloGestaoAtivo.TagHelpers.output.cache
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.ModuloGestaoAtivo.RazorCoreGenerate.cache
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Ativo\Baixar.g.cshtml.cs
-D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Ativo\Comprar.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Ativo\Editar.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Ativo\Listar.g.cshtml.cs
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Ativo\Registrar.g.cshtml.cs
@@ -37,3 +35,9 @@ D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.Modul
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.ModuloGestaoAtivo.dll
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.ModuloGestaoAtivo.pdb
 D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\SGA.ModuloGestaoAtivo.csproj.CopyComplete
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Baixar\Baixar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Baixar\Listar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Baixar\_ListaBaixar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Comprar\Comprar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Comprar\Listar.g.cshtml.cs
+D:\Projetos\GitHub\SGA\SGA.ModuloGestaoAtivo\obj\Release\netcoreapp2.2\Razor\Views\Comprar\_ListaSolicitacao.g.cshtml.cs
